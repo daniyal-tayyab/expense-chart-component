@@ -1,0 +1,27 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(27, 66%, 92%);
+}
+
+.ha {
+  color: hsl(10, 79%, 65%);
+  color: hsl(186, 34%, 60%);
+
+  color: hsl(25, 47%, 15%);
+  color: hsl(28, 10%, 53%);
+  color: hsl(27, 66%, 92%);
+  color: hsl(33, 100%, 98%);
+}
