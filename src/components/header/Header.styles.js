@@ -7,7 +7,6 @@ import {
 } from "../../styles/colors";
 
 export const Container = styled.header`
-  width: 100%;
   padding: 1.8rem 2rem;
   background-color: ${colorSoftRed};
   border-radius: 1.2rem;

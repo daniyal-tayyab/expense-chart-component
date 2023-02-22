@@ -4,7 +4,6 @@ import Header from "./components/header/Header";
 import Chart from "./components/chart/Chart";
 
 const Container = styled.main`
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -26,7 +25,7 @@ const ChartContainer = styled.div`
   }
 
   @media (max-width: 600px) {
-    width: 95%;
+    width: 80%;
   }
 `;
 

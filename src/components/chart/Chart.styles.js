@@ -9,7 +9,6 @@ import {
 } from "../../styles/colors";
 
 export const Container = styled.section`
-  width: 100%;
   height: 40rem;
   padding: 2.5rem 2rem;
   border-radius: 1.2rem;
@@ -35,19 +34,27 @@ export const ChartContainer = styled.div`
 
 export const ChartBar = styled.div`
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
+  justify-content: flex-end;
 
   &:hover p {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  @media (max-width: 1090px) {
+    min-width: 4rem;
+  }
+
+  @media (max-width: 540px) {
+    min-width: 3rem;
   }
 `;
 
 export const HoverAmount = styled.p`
   background-color: ${colorDarkBrown};
   color: ${colorVeryPaleOrange};
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   padding: 0.6rem 1rem;
   border-radius: 0.5rem;
@@ -56,12 +63,22 @@ export const HoverAmount = styled.p`
   opacity: 0;
   transform: translateY(1rem);
   transition: all 0.3s;
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 0.6rem;
+  }
+
+  @media (max-width: 400px) {
+    font-size: 0.5rem;
+  }
 `;
 
 export const Bar = styled.div`
-  width: 5rem;
   height: ${(props) => props.amount}%;
-  background-color: ${colorSoftRed};
   background-color: ${(props) =>
     props.isCurrentDay ? colorCyan : colorSoftRed};
   margin-bottom: 1rem;
